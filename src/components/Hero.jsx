@@ -240,7 +240,7 @@ const Hero = ({ onNavigate, currentSection, onShowContact }) => {
           <h1 
             className="hero-name mb-3"
             style={{ 
-              fontSize: '4.5rem',
+              fontSize: '5.5rem',
               fontFamily: "'Courier New', monospace",
               fontWeight: 'bold',
               color: '#a855f7',
@@ -259,7 +259,7 @@ const Hero = ({ onNavigate, currentSection, onShowContact }) => {
             style={{ 
               color: '#c084fc',
               fontFamily: "'Courier New', monospace",
-              fontSize: '1.5rem',
+              fontSize: '1.8rem',
               textShadow: '0 0 10px rgba(192, 132, 252, 0.5)'
             }}
           >
@@ -269,7 +269,7 @@ const Hero = ({ onNavigate, currentSection, onShowContact }) => {
             className="hero-description"
             style={{ 
               color: '#e9d5ff',
-              fontSize: '1.1rem',
+              fontSize: '1.3rem',
               lineHeight: '1.8',
               maxWidth: '450px',
               fontFamily: "'Segoe UI', sans-serif",
