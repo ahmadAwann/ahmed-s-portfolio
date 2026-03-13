@@ -24,20 +24,11 @@ const Contact = ({ onClose }) => {
       id: 'linkedin',
       title: 'LinkedIn',
       value: 'Ahmad Munir',
-      url: 'https://www.linkedin.com/in/ahmad-05346a2aa/',
+      url: 'https://www.linkedin.com/in/ahmad-05346a2aa',
       icon: 'bi-linkedin',
-      color: '#06b6d4',
-      isLinkedIn: true
+      color: '#06b6d4'
     }
   ];
-
-  const handleLinkClick = (e, link) => {
-    if (link.isLinkedIn) {
-      e.preventDefault();
-      // Open in new window with specific features to try to get public view
-      window.open(link.url, '_blank', 'noopener,noreferrer');
-    }
-  };
 
   return (
     <>
@@ -74,7 +65,9 @@ const Contact = ({ onClose }) => {
         width: '85%',
         boxShadow: '0 0 60px rgba(168, 85, 247, 0.3), inset 0 0 30px rgba(168, 85, 247, 0.1)',
         backdropFilter: 'blur(10px)',
-        animation: 'slideUp 0.4s ease-out'
+        animation: 'slideUp 0.4s ease-out',
+        maxHeight: '90vh',
+        overflowY: 'auto'
       }}>
         <style>{`
           @keyframes slideUp {

@@ -89,19 +89,65 @@ const Hero = ({ onNavigate, currentSection, onShowContact }) => {
       <style>{`
         @media (max-width: 768px) {
           .hero-name {
-            font-size: 1.8rem !important;
+            font-size: 2.2rem !important;
             line-height: 1.1 !important;
           }
           .hero-title {
-            font-size: 0.75rem !important;
+            font-size: 0.9rem !important;
           }
           .hero-description {
-            font-size: 0.6rem !important;
-            line-height: 1.3 !important;
+            font-size: 0.75rem !important;
+            line-height: 1.4 !important;
+            max-width: 100% !important;
           }
           .hero-left-panel {
             width: 40% !important;
-            padding: 0 30px !important;
+            padding: 0 20px !important;
+          }
+          .hero-social-icons a {
+            font-size: 1.3rem !important;
+          }
+        }
+        @media (max-width: 600px) {
+          .hero-name {
+            font-size: 1.8rem !important;
+            line-height: 1 !important;
+          }
+          .hero-title {
+            font-size: 0.8rem !important;
+            margin-bottom: 0.5rem !important;
+          }
+          .hero-description {
+            font-size: 0.7rem !important;
+            line-height: 1.3 !important;
+          }
+          .hero-left-panel {
+            width: 35% !important;
+            padding: 0 15px !important;
+          }
+          .hero-social-icons a {
+            font-size: 1.1rem !important;
+          }
+        }
+        @media (max-height: 600px) {
+          .hero-name {
+            font-size: 1.8rem !important;
+            line-height: 1 !important;
+            margin-bottom: 0.5rem !important;
+          }
+          .hero-title {
+            font-size: 0.8rem !important;
+            margin-bottom: 0.5rem !important;
+          }
+          .hero-description {
+            font-size: 0.7rem !important;
+            line-height: 1.3 !important;
+          }
+          .hero-left-panel {
+            padding: 0 15px !important;
+          }
+          .hero-social-icons a {
+            font-size: 1.1rem !important;
           }
         }
       `}</style>
@@ -119,8 +165,8 @@ const Hero = ({ onNavigate, currentSection, onShowContact }) => {
           enableZoom={true}
           enablePan={true}
           enableRotate={true}
-          minDistance={10}
-          maxDistance={60}
+          minDistance={5}
+          maxDistance={9.2}
           target={[0, 0, 0]}
         />
       </Canvas>
@@ -225,8 +271,9 @@ const Hero = ({ onNavigate, currentSection, onShowContact }) => {
               color: '#e9d5ff',
               fontSize: '1.1rem',
               lineHeight: '1.8',
-              maxWidth: '500px',
-              fontFamily: "'Segoe UI', sans-serif"
+              maxWidth: '450px',
+              fontFamily: "'Segoe UI', sans-serif",
+              margin: 0
             }}
           >
             Passionate developer with expertise in full-stack web development, mobile applications, 
